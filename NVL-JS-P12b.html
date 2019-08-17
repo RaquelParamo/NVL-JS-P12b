@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>NVL-JS-P12b</title>
+  </head>
+  <body>
+      <h1>Funciones</h1>
+
+    <script>
+
+        var numero_azar;
+        var numeros_pares = [];
+        var numeros_impares = [];
+
+        function aleatorio (){
+          numero_azar = Math.floor((Math.random() * 100) + 1);
+          return numero_azar;
+        }
+        function numeros(numero_azar){
+          if (numero_azar % 2 == 0){
+            numeros_pares.push(numero_azar);
+
+            // %2 == 0 para saber si es divisible por 2
+        }
+          else {
+            numeros_impares.push(numero_azar);
+
+            // el resto de valores se empujarían al array numeros_impares
+          }
+          for (var i = 0; i < 50; i++);
+          aleatorio(numeros());
+        }
+
+        Document.write ("Los números impares son " + numeros_impares);
+        Document.write ("Los números pares son: " + numeros_pares);
+
+      </script>
+  </body>
+  </html>
